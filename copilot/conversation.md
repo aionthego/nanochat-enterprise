@@ -3,7 +3,9 @@ Andrej Karpathy created the repo nanochat. Here, our objective is to build nanoc
 
 The following conversation was exchanged with Open Agent Manager in Antigravity.
 ```
-Our objective is to build nanochat-enterprise, an AI-powered chat application for enterprise use. Currently all executions are happening from speedrun.sh, but we want to move to a more enterprise-ready setup. We would like to build a FASTAPI controller, could you help us with that?
+Our objective is to build nanochat-enterprise, an AI-powered chat application for enterprise use.
+Currently all executions are happening from speedrun.sh, but we want to move to a more enterprise-ready setup.
+We would like to build a FASTAPI controller, could you help us with that?
 ```
 response: 
 ```
