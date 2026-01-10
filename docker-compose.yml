@@ -19,3 +19,12 @@ services:
       - NANOCHAT_BASE_DIR=/data
       - NPROC_PER_NODE=8
     restart: unless-stopped
+
+  user-interface:
+    build: ./user-interface
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+    depends_on:
+      - nanochat
