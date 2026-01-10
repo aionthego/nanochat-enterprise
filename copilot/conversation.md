@@ -17,3 +17,8 @@ If you need any help extending the API with more features (like real-time websoc
 
 Happy coding! 🚀
 ```
+
+Day 2:
+```could we move this module to docker 
+```
+

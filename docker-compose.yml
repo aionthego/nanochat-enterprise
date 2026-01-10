@@ -1,6 +1,8 @@
 services:
   nanochat:
-    build: .
+    build:
+      context: ./building-model
+      dockerfile: building-model-dockerfile
     ports:
       - "8000:8000"
     volumes:
