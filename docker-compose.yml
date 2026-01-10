@@ -1,0 +1,19 @@
+services:
+  nanochat:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/data
+      - ./.env:/app/.env
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [ gpu ]
+    environment:
+      - NANOCHAT_BASE_DIR=/data
+      - NPROC_PER_NODE=8
+    restart: unless-stopped
